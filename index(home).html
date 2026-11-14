@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuberTimer - Clean Speedcubing Timers & Trainers</title>
+    <link rel="stylesheet" href="index(home).css">
+
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                CuberTimer
+            </a>
+            <div class="nav-links">
+                <a href="#puzzles">Puzzles</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <div class="hero-badge">STACKMAT-STYLE PRECISION • OLL & PLL TRAINERS</div>
+            <h1>Distraction-free timing for <span>speedcubers.</span></h1>
+            <p>
+                Hold spacebar until green, release to start, and track your Ao5 and Ao12 automatically. Switch seamlessly between full solves and dedicated OLL/PLL algorithm drills.
+            </p>
+            <a href="#puzzles" class="hero-cta">Choose Your Puzzle ↓</a>
+        </div>
+
+        <!-- Interactive 3D Rotating Rubik's Cube -->
+        <div class="cube-stage" title="Hover to spin faster!">
+            <div class="cube" id="heroCube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Puzzle Selection Hub -->
+    <section class="puzzles-section" id="puzzles">
+        <div class="section-header">
+            <h2>Select a Puzzle Timer</h2>
+            <p>Pick an event below to open its dedicated timer and scramble generator.</p>
+        </div>
+
+        <div class="puzzle-grid">
+            <!-- 2x2 -->
+            <a href="../2x2solves/2x2timer.html" class="puzzle-btn">
+                <div class="puzzle-icon">2×2</div>
+                <div class="puzzle-title">2x2 Cube</div>
+                <div class="puzzle-sub">WCA RUF scrambles + 2x2 OLL & PLL trainer</div>
+                <div class="launch-tag">Open Timer →</div>
+            </a>
+
+            <!-- 3x3 -->
+            <a href="../3x3solves/3x3timer.html" class="puzzle-btn">
+                <div class="puzzle-icon">3×3</div>
+                <div class="puzzle-title">3x3 Cube</div>
+                <div class="puzzle-sub">20-move WCA scrambles + full OLL & PLL trainer</div>
+                <div class="launch-tag">Open Timer →</div>
+            </a>
+
+            <!-- 4x4 -->
+            <a href="../4x4solves/4x4timer.html" class="puzzle-btn">
+                <div class="puzzle-icon">4×4</div>
+                <div class="puzzle-title">4x4 Cube</div>
+                <div class="puzzle-sub">Wide-turn scrambles & parity-ready session tracking</div>
+                <div class="launch-tag">Open Timer →</div>
+            </a>
+
+            <!-- Pyraminx -->
+            <a href="../pyraminxsolves/pyraminxtimer.html" class="puzzle-btn">
+                <div class="puzzle-icon">▲</div>
+                <div class="puzzle-title">Pyraminx</div>
+                <div class="puzzle-sub">Tip & body notation scrambles with instant Ao5/Ao12</div>
+                <div class="launch-tag">Open Timer →</div>
+            </a>
+
+            <!-- Skewb -->
+            <a href="../skewbsolves/skewbtimer.html" class="puzzle-btn">
+                <div class="puzzle-icon">◆</div>
+                <div class="puzzle-title">Skewb</div>
+                <div class="puzzle-sub">Fixed-corner notation + Skewb OLL & PLL drills</div>
+                <div class="launch-tag">Open Timer →</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer with Creator Note -->
+    <footer id="about">
+        <p class="creator-note">
+            Built by Milan Arvind. A speedcuber who wanted a cleaner, faster way to drill algorithms without clutter. Happy cubing!
+        </p>
+    </footer>
+
+    <script src="index(home).js"></script>
+</body>
+</html>

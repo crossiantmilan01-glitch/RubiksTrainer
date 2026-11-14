@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuberTimer 4x4 - Normal & Parity Trainer</title>
+    <link rel="stylesheet" href="4x4timer.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>CuberTimer</h1>
+        <span class="event-badge">4x4x4</span>
+    </header>
+
+    <div class="container">
+        <!-- Main Timer Interface -->
+        <div class="timer-section" id="timerSection">
+            <!-- 3-Option Mode Selector -->
+            <div class="mode-selector" id="modeSelector">
+                <button class="mode-btn active" data-mode="normal">Normal 4x4</button>
+                <button class="mode-btn" data-mode="oll_parity">OLL Parity Trainer</button>
+                <button class="mode-btn" data-mode="pll_parity">PLL Parity Trainer</button>
+            </div>
+
+            <div class="scramble-box">
+                <div class="scramble-text" id="scrambleDisplay">Generating 4x4 scramble...</div>
+                <button class="btn-scramble" id="newScrambleBtn">New Scramble</button>
+            </div>
+
+            <div class="timer-display" id="timerDisplay">0.00</div>
+            <div class="timer-instructions" id="timerInstructions">Hold SPACEBAR until green, then release to start</div>
+        </div>
+
+        <!-- Sidebar (Stats & History) -->
+        <div class="sidebar">
+            <div class="card">
+                <h3 id="statsTitle">Normal 4x4 Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Current</div>
+                        <div class="stat-value" id="statCurrent">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Best</div>
+                        <div class="stat-value" id="statBest">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Ao5</div>
+                        <div class="stat-value" id="statAo5">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Ao12</div>
+                        <div class="stat-value" id="statAo12">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="flex: 1; display: flex; flex-direction: column;">
+                <h3 id="historyTitle">Normal 4x4 History</h3>
+                <div class="history-list" id="historyList"></div>
+                <div class="controls-row">
+                    <button class="btn-danger" id="clearHistoryBtn">Clear Session History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Press & hold SPACE until green, release to start. Press SPACE again to stop.
+    </footer>
+
+    <script src="4x4timer.js"></script>
+</body>
+</html>

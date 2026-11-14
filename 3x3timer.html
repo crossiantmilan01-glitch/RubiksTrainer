@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuberTimer - Speedcubing Timer</title>
+    <link rel="stylesheet" href="3x3timer.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CuberTimer</h1>
+    </header>
+
+    <div class="container">
+        <!-- Main Timer Interface -->
+        <div class="timer-section" id="timerSection">
+            <div class="scramble-box">
+                <div class="scramble-text" id="scrambleDisplay">Generating scramble...</div>
+                <button class="btn-scramble" id="newScrambleBtn">New Scramble</button>
+            </div>
+
+            <div class="timer-display" id="timerDisplay">0.00</div>
+            <div class="timer-instructions" id="timerInstructions">Hold SPACEBAR to inspect / start</div>
+        </div>
+
+        <!-- Sidebar (Stats & History) -->
+        <div class="sidebar">
+            <div class="card">
+                <h3>Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Current</div>
+                        <div class="stat-value" id="statCurrent">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Best</div>
+                        <div class="stat-value" id="statBest">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Ao5</div>
+                        <div class="stat-value" id="statAo5">-</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Ao12</div>
+                        <div class="stat-value" id="statAo12">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="flex: 1; display: flex; flex-direction: column;">
+                <h3>Solve History</h3>
+                <div class="history-list" id="historyList">
+                    <!-- Solves will appear here -->
+                </div>
+                <div class="controls-row">
+                    <button class="btn-danger" id="clearHistoryBtn">Clear History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Press & hold SPACE until green, release to start. Press SPACE again to stop.
+    </footer>
+    <script src="3x3timer.js"></script>
+</body>
+</html>
